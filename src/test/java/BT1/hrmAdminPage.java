@@ -1,4 +1,5 @@
-package Scripts;
+package BT1;
 
 public class hrmAdminPage {
 }
+
