@@ -16,5 +16,4 @@ public class Locators {
     public static By minusButton = By.xpath("//button[contains(@class, 'font-bold') and contains(@class, 'rounded-full') and .//div[text()='-']]");
     public static By searchIcon = By.xpath("//div[contains(@class, 'bg-main') and contains(@class, 'rounded-full')]//span[@aria-label='search']");
     public static By homeLink = By.xpath("//li/a[contains(@class, 'block') and contains(text(), 'Home')]");
-
 }

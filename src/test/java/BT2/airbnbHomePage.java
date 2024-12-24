@@ -49,21 +49,25 @@ public class airbnbHomePage {
 
             driver.get("https://demo4.cybersoft.edu.vn/");
             slowDown(5000);
+
             //about
             WebElement aboutLink = wait.until(ExpectedConditions.elementToBeClickable(Locators.aboutLink));
             aboutLink.click();
             slowDown(5000);
+
             //location
             WebElement destinationSection = wait.until(ExpectedConditions.presenceOfElementLocated(Locators.destinationSection));
             scrollIntoView(driver, destinationSection);
             safeClick(driver, destinationSection);
             System.out.println("Destination section clicked successfully.");
             slowDown(2000);
+
             //choose hcm
             WebElement hoChiMinhOption = wait.until(ExpectedConditions.elementToBeClickable(Locators.hoChiMinhOption));
             safeClick(driver, hoChiMinhOption);
             System.out.println("Hồ Chí Minh selected successfully.");
             slowDown(2000);
+
             //avt
             WebElement interactButton = wait.until(ExpectedConditions.elementToBeClickable(Locators.interactButton));
             scrollIntoView(driver, interactButton);
@@ -73,6 +77,7 @@ public class airbnbHomePage {
             safeClick(driver, interactButton);
             System.out.println("Interact button clicked the second time to close the popover.");
             slowDown(2000);
+
             //cantho
             WebElement canThoOption = wait.until(ExpectedConditions.elementToBeClickable(Locators.canThoOption));
             scrollIntoView(driver, canThoOption);
@@ -87,48 +92,56 @@ public class airbnbHomePage {
             } else {
                 System.out.println("Navigation failed.");
             }
+
             //return main page by logo airbnb
             WebElement airbnbLogoLink = wait.until(ExpectedConditions.elementToBeClickable(Locators.airbnbLogoLink));
             scrollIntoView(driver, airbnbLogoLink);
             safeClick(driver, airbnbLogoLink);
             System.out.println("Clicked on Airbnb logo link to return to the main page.");
             slowDown(2000);
+
             //loai noi
             WebElement loaiNoiOButtonElement = wait.until(ExpectedConditions.elementToBeClickable(loaiNoiOButton));
             scrollIntoView(driver, loaiNoiOButtonElement);
             safeClick(driver, loaiNoiOButtonElement);
             System.out.println("Clicked on 'Loại nơi ở' button successfully.");
             slowDown(2000);
+
             //gia
             WebElement giaButtonElement = wait.until(ExpectedConditions.elementToBeClickable(giaButton));
             scrollIntoView(driver, giaButtonElement);
             safeClick(driver, giaButtonElement);
             System.out.println("Clicked on 'Giá' button successfully.");
             slowDown(2000);
+
             //button them khach
             WebElement themKhachElement = wait.until(ExpectedConditions.presenceOfElementLocated(Locators.themKhachText));
             scrollIntoView(driver, themKhachElement);
             safeClick(driver, themKhachElement);
             System.out.println("'Thêm khách' text clicked successfully.");
             slowDown(2000);
+
             //+
             WebElement plusButtonElement = wait.until(ExpectedConditions.presenceOfElementLocated(Locators.plusButton));
             scrollIntoView(driver, plusButtonElement);
             safeClick(driver, plusButtonElement);
             System.out.println("'+' button clicked successfully.");
             slowDown(2000);
+
             //-
             WebElement minusButtonElement = wait.until(ExpectedConditions.presenceOfElementLocated(Locators.minusButton));
             scrollIntoView(driver, minusButtonElement);
             safeClick(driver, minusButtonElement);
             System.out.println("'-' button clicked successfully.");
             slowDown(2000);
+
             //search
             WebElement searchIconElement = wait.until(ExpectedConditions.presenceOfElementLocated(Locators.searchIcon));
             scrollIntoView(driver, searchIconElement);
             safeClick(driver, searchIconElement);
             System.out.println("Search icon clicked successfully.");
             slowDown(2000);
+
             //return main page by homelink
             WebElement homeLinkElement = wait.until(ExpectedConditions.elementToBeClickable(Locators.homeLink));
             scrollIntoView(driver, homeLinkElement);
